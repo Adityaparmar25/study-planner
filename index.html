@@ -6,40 +6,65 @@
     <title>Study Planner</title>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <h1>Study Planner Templates</h1>
         <h2>--My study plan</h2>
         <h4>Learn, Note, Review.</h4>
+
+        <!-- navigation -->
         <nav>
             <ul>
-                <li class="navbar1"></li><a href="#Dashboard">Dashboard</a></li>
-                <li class="navbar2"></li><a href="Topic">Topic</a></li>
-                <li class="navbar3"></li><a href="#Notes">Notes</a></li>
-                <li class="navbar4"></li><a href="#review">Review</a></li>
-                <li class="navbar5"></li><a href="#analytics">Analytics</a></li>
-        
+                <li class="navbar1">
+                    <a href="#Dashboard">Dashboard</a>
+                </li>
+                <li class="navbar2">
+                    <a href="Topic">Topic</a>
+                </li>
+                <li class="navbar3">
+                    <a href="#Notes">Notes</a>
+                </li>
+                <li class="navbar4">
+                    <a href="#review">Review</a>
+                </li>
+                <li class="navbar5">
+                    <a href="#analytics">Analytics</a>
+                </li>
+            </ul>
         </nav>
     </header>
+
     <main>    
-        <h2>Welcome to the Study Planner</h2>
-        <p>Plan your study sessions effectively!</p>
-    </main>
-    <section>
-        <h1>
-            Dashboard <h3> + Add Task</h3>
-        </h1>
-        <pre>
+
+        <!-- welcome section -->
+        <section id="Dashboard">
+            <h2>Welcome to the Study Planner</h2>
+            <p>Plan your study sessions effectively!</p>
+        </section>
+        
+        <!-- dashboard Statistics -->
+        <section>
+            <h2>Dashboard </h2> 
+            <button type="button"> + Add Task </button>
+
+        <blockquote>
             "Learning never exhausts the mind" - Leonardo do Vinci
-        </pre>
+        </blockquote>
+
+
         <h3><b>0 </b>Total Topics</h3>
         <h3><b>0 </b>Completed</h3>
         <h3><b>0.0 </b>Study Hours</h3>
         <h3"><b>0% </b>Comptation Rate</h3>
-        <pre></pre>
-        <pre><h3><b class="yellow">🔥7 <br>Days Streak</b></h3>
-        </pre>
-        <div>
-            <h2><b>Weekly Calender</b></h2>
+
+
+        <h3><b class="yellow">🔥7 <br>Days Streak</b></h3>
+        </section>
+
+        <!-- Weekly Calender -->
+        <section>
+            <h2>Weekly Calender</h2>
+
         <p class="weeklycard"> Sun <b>18</b></p>
         <p class="weeklycard"> Mon <b>19</b></p>
         <p class="weeklycard"> Tue <b>20</b></p>
@@ -47,20 +72,43 @@
         <p class="weeklycard"> Thu <b>22</b></p>
         <p class="weeklycard"> Fri <b>23</b></p>
         <p class="weeklycard"> Sat <b>24</b></p>
-        </div>
-        <div class="blue">
+        </section>
+
+        <section id="Notes">
+            <h2>My Notes</h2>
+            <p>Your study notes will appear here.</p>
+        </section>
+
+        <!-- Review section -->
+        <section id="review">
+            <h2>Revision and Review</h2>
+            <p>Review your completed topics regularly.</p>
+        </section>
+
+        <!-- Analytics Section -->
+        <section id="analytics">
+            <h2>Study Analytics</h2>
+            <p>Track your study progress here.</p>
+        </section>
+
+        <!-- Pomodoro Timer -->
+        <section class="blue">
             <h2>Pomodoro Timer</h2>
-            <br>
+
             <h3>Focus Session</h3>
-            <br>
+            
             <h1>25:00</h1>
-            <br>
-            <p>
-            <h4 class="white"> start </h4>
-            <h4 class="white"> Pouse </h4>
-            <h4 class="white"> Reset </h4>
-            </p>
-        </div>
-    </section>
+            
+
+            <button class="white"> start </button>
+            <button class="white"> Pouse </button>
+            <button class="white"> Reset </button>        
+        </section>
+    </main>
+
+    <!-- Footer -->
+     <footer>
+        <p>&copy; 2026 Study Planner. Keep Learning every day!</p>
+     </footer>
 </body>
 </html>
