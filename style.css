@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+    background-color: #f3f8ff;
+    color: #333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.headerBox {
+    width: 1066px;
+    margin: auto;
+    padding: 8px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoBox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logoBox h2 {
+    font-size: 20px;
+    color: #2a3fa6;
+    line-height: 20px;
+}
+
+.logoBox p {
+    font-size: 11px;
+    color: #4a5aa8;
+}
+
+nav a {
+    color: #101a4d;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 16px;
+    margin-left: 6px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #eef4fe;
+}
+
+nav a.active {
+    background-color: #dbe8fd;
+    color: #2457d6;
+}
+
+.container {
+    width: 1066px;
+    margin: 18px auto;
+}
+
+/* Hero */
+.hero {
+    height: 168px;
+    padding: 20px 46px;
+    border-radius: 14px;
+    background-image: url(images/hero.png);
+    background-size: cover;
+    background-position: right center;
+    margin-bottom: 14px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    color: #10196b;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #3b4670;
+    margin-top: 4px;
+}
+
+.goalBox {
+    width: 486px;
+    background-color: #f5fafe;
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.goalBox h3 {
+    font-size: 16px;
+    color: #2260d1;
+}
+
+.goalBox p {
+    font-size: 13px;
+    margin-top: 0px;
+    color: #4a5373;
+}
+
+/* Cards  */
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 14px;
+    padding: 5px;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.tasksCard {
+    width: 47.7%;
+}
+
+.calendarCard {
+    width: 51.4%;
+}
+
+.examCard {
+    width: 49.5%;
+}
+
+.progressCard {
+    width: 49.5%;
+}
+
+.cardTitle {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 16px;
+    border-radius: 10px;
+}
+
+.cardTitle h2 {
+    font-size: 20px;
+    color: #10196b;
+}
+
+.whiteTitle {
+    background-color: #fbfffa;
+}
+
+.blueTitle {
+    background-color: #f0f7fc;
+}
+
+.pinkTitle {
+    background-color: #fdf1f6;
+}
+
+.greenTitle {
+    background-color: #f0fbf7;
+}
+
+.cardBody {
+    padding: 12px 14px 14px 14px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #1b2350;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    height: 38px;
+    border: 1px solid #cdd9ee;
+    border-radius: 6px;
+    padding: 0px 12px;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+ /* Tasks */
+.taskForm {
+    display: flex;
+    gap: 10px;
+}
+
+.taskForm input {
+    width: 70%;
+}
+
+.taskForm button {
+    width: 30%;
+}
+
+button {
+    background-color: #3875f4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    height: 38px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.cardBody h3 {
+    font-size: 18px;
+    color: #10196b;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+.emptyBox {
+    background-color: #f4f9fd;
+    border-radius: 10px;
+    padding: 26px 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #4a5373;
+}
+
+.emptyBox img {
+    margin-bottom: 8px;
+}
+
+.emptyBox b {
+    font-size: 13px;
+    color: #1b2350;
+}
+
+#taskList {
+    list-style: none;
+}
+
+#taskList li {
+    background-color: #eef4fd;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#taskList li input {
+    width: 18px;
+    height: 18px;
+}
+
+#taskList li span {
+    flex: 1;
+}
+
+#taskList li button {
+    background-color: #e8476a;
+    height: 26px;
+    padding: 0px 10px;
+    font-size: 12px;
+}
+
+.done {
+    text-decoration: line-through;
+    color: gray;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 13px;
+}
+
+th, td {
+    border: 1px solid #cfdcf0;
+    padding: 5px;
+    height: 28px;
+}
+
+th {
+    background-color: #d6e6fb;
+}
+
+.day {
+    background-color: #eef4fd;
+    font-weight: bold;
+}
+
+.sunday {
+    background-color: #e0f4e8;
+    color: #1d5a34;
+}
+
+.examForm {
+    display: flex;
+    gap: 20px;
+}
+
+.examField {
+    width: 50%;
+}
+
+#examBtn {
+    width: 100%;
+    height: 36px;
+    background-color: #f2697b;
+    margin-top: 10px;
+}
+
+.examResult {
+    background-color: #fcf2f4;
+    border-radius: 10px;
+    margin-top: 12px;
+    padding: 14px;
+    text-align: center;
+    color: #c0344d;
+    font-size: 13px;
+}
+
+.stat {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.badge {
+    display: inline-block;
+    min-width: 32px;
+    padding: 4px 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.green {
+    background-color: #dcf5e5;
+}
+
+.blue {
+    background-color: #e2ebfb;
+}
+
+.yellow {
+    background-color: #fdecc3;
+}
+
+.barRow {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 18px;
+    font-size: 13px;
+}
+
+.barBack {
+    width: 100%;
+    height: 17px;
+    background-color: #e3e8ee;
+    border-radius: 20px;
+}
+
+.barFill {
+    width: 0%;
+    height: 17px;
+    background-color: #2fae62;
+    border-radius: 20px;
+}
+
+footer {
+    width: 1128px;
+    margin: 0px auto 24px auto;
+    background-color: #dbe8fb;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    font-size: 13px;
+    color: #56607f;
+}
+
+@media (max-width: 1150px) {
+    .headerBox, .container, footer {
+        width: 94%;
+    }
+    .headerBox {
+        flex-direction: column;
+        gap: 8px;
+    }
+    nav {
+        text-align: center;
+    }
+    .hero {
+        height: auto;
+        background-position: left center;
+        padding-bottom: 24px;
+    }
+    .goalBox {
+        width: 100%;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 14px;
+    }
+}

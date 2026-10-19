@@ -3,112 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study Planner</title>
+    <title>StudyMate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Study Planner Templates</h1>
-        <h2>--My study plan</h2>
-        <h4>Learn, Note, Review.</h4>
 
-        <!-- navigation -->
-        <nav>
-            <ul>
-                <li class="navbar1">
-                    <a href="#Dashboard">Dashboard</a>
-                </li>
-                <li class="navbar2">
-                    <a href="#Topic">Topic</a>
-                </li>
-                <li class="navbar3">
-                    <a href="#Notes">Notes</a>
-                </li>
-                <li class="navbar4">
-                    <a href="#review">Review</a>
-                </li>
-                <li class="navbar5">
-                    <a href="#analytics">Analytics</a>
-                </li>
-            </ul>
-        </nav>
+  
+    <header>
+        <div class="headerBox">
+            <div class="logoBox">
+                <img src="images/logo.png" alt="logo" width="44">
+                <div>
+                    <h2>StudyMate</h2>
+                    <p>Your personal study planner</p>
+                </div>
+            </div>
+            <nav>
+                <a href="#home" class="active">Home</a>
+                <a href="#tasks">My Tasks</a>
+                <a href="#calendar">Weekly Calendar</a>
+                <a href="#exam">Exam Countdown</a>
+                <a href="#progress">My Progress</a>
+            </nav>
+        </div>
     </header>
 
-    <main>    
+    <div class="container">
 
-        <!-- welcome section -->
-        <section id="Dashboard">
-            <h2>Welcome to the Study Planner</h2>
-            <p>Plan your study sessions effectively!</p>
-        </section>
-        
-        <!-- dashboard Statistics -->
-        <section>
-            <h2>Dashboard </h2> 
-            <button type="button"> + Add Task </button>
-
-        <blockquote>
-            "Learning never exhausts the mind" - Leonardo da Vinci
-        </blockquote>
-
-
-        <h3><b>0 </b>Total Topics</h3>
-        <h3><b>0 </b>Completed</h3>
-        <h3><b>0.0 </b>Study Hours</h3>
-        <h3><b>0% </b>Completion Rate</h3>
-
-
-        <h3><b class="yellow">🔥7 <br>Days Streak</b></h3>
+        <!-- Welcome section -->
+        <section class="hero" id="home">
+            <h1>Welcome to StudyMate!</h1>
+            <p>Plan your studies, complete your tasks, and achieve your goals.</p>
+            <div class="goalBox">
+                <img src="images/target.png" alt="goal" width="38">
+                <div>
+                    <h3>Today's Study Goal</h3>
+                    <p>Stay focused and complete your daily tasks.</p>
+                </div>
+            </div>
         </section>
 
-        <!-- Weekly Calendar -->
-        <section>
-            <h2>Weekly Calendar</h2>
+        <div class="row">
 
-        <p class="weeklycard"> Sun <b>18</b></p>
-        <p class="weeklycard"> Mon <b>19</b></p>
-        <p class="weeklycard"> Tue <b>20</b></p>
-        <p class="weeklycard"> Wed <b>21</b></p>
-        <p class="weeklycard"> Thu <b>22</b></p>
-        <p class="weeklycard"> Fri <b>23</b></p>
-        <p class="weeklycard"> Sat <b>24</b></p>
-        </section>
+            <section class="card tasksCard" id="tasks">
+                <div class="cardTitle whiteTitle">
+                    <img src="images/tasks.png" alt="tasks" width="30">
+                    <h2>My Study Tasks</h2>
+                </div>
+                <div class="cardBody">
+                    <label>Enter your task:</label>
+                    <div class="taskForm">
+                        <input type="text" id="taskInput" placeholder="Example: Study Mathematics">
+                        <button id="addBtn">Add Task</button>
+                    </div>
 
-        <section id="Notes">
-            <h2>My Notes</h2>
-            <p>Your study notes will appear here.</p>
-        </section>
+                    <h3>Task List</h3>
+                    <ul id="taskList"></ul>
+                    <div class="emptyBox" id="emptyBox">
+                        <img src="images/empty.png" alt="empty" width="36">
+                        <p><b>No tasks yet!</b></p>
+                        <p>Add a task above to get started.</p>
+                    </div>
+                </div>
+            </section>
 
-        <!-- Review section -->
-        <section id="review">
-            <h2>Revision and Review</h2>
-            <p>Review your completed topics regularly.</p>
-        </section>
+            <section class="card calendarCard" id="calendar">
+                <div class="cardTitle blueTitle">
+                    <img src="images/calendar.png" alt="calendar" width="30">
+                    <h2>Weekly Study Calendar</h2>
+                </div>
+                <div class="cardBody">
+                    <table>
+                        <tr>
+                            <th>Day</th>
+                            <th>9 AM</th>
+                            <th>11 AM</th>
+                            <th>2 PM</th>
+                        </tr>
+                        <tr>
+                            <td class="day">Monday</td>
+                            <td>Mathematics</td>
+                            <td>Python</td>
+                            <td>Revision</td>
+                        </tr>
+                        <tr>
+                            <td class="day">Tuesday</td>
+                            <td>Statistics</td>
+                            <td>HTML</td>
+                            <td>Practice</td>
+                        </tr>
+                        <tr>
+                            <td class="day">Wednesday</td>
+                            <td>Mathematics</td>
+                            <td>Python</td>
+                            <td>Revision</td>
+                        </tr>
+                        <tr>
+                            <td class="day">Thursday</td>
+                            <td>Statistics</td>
+                            <td>HTML</td>
+                            <td>Practice</td>
+                        </tr>
+                        <tr>
+                            <td class="day">Friday</td>
+                            <td>Mathematics</td>
+                            <td>Python</td>
+                            <td>Revision</td>
+                        </tr>
+                        <tr>
+                            <td class="day">Saturday</td>
+                            <td>Revision</td>
+                            <td>Quiz</td>
+                            <td>Practice</td>
+                        </tr>
+                        <tr>
+                            <td class="day">Sunday</td>
+                            <td colspan="3" class="sunday">Weekly Review and Rest</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
 
-        <!-- Analytics Section -->
-        <section id="analytics">
-            <h2>Study Analytics</h2>
-            <p>Track your study progress here.</p>
-        </section>
+        </div>
 
-        <!-- Pomodoro Timer -->
-        <section class="blue">
-            <h2>Pomodoro Timer</h2>
+        <div class="row">
 
-            <h3>Focus Session</h3>
-            
-            <h1>25:00</h1>
-            
+            <section class="card examCard" id="exam">
+                <div class="cardTitle pinkTitle">
+                    <img src="images/alarm.png" alt="alarm" width="32">
+                    <h2>Exam Countdown</h2>
+                </div>
+                <div class="cardBody">
+                    <div class="examForm">
+                        <div class="examField">
+                            <label>Exam name:</label>
+                            <input type="text" id="examName" placeholder="Example: Mathematics Exam">
+                        </div>
+                        <div class="examField">
+                            <label>Exam date:</label>
+                            <input type="date" id="examDate">
+                        </div>
+                    </div>
+                    <button id="examBtn">Set Exam</button>
+                    <div class="examResult" id="examResult">
+                        <img src="images/exam.png" alt="exam" width="34">
+                        <p id="examText">Your exam countdown will appear here.</p>
+                    </div>
+                </div>
+            </section>
 
-            <button class="white" type="button"> start </button>
-            <button class="white" type="button"> Pause </button>
-            <button class="white" type="button"> Reset </button>        
-        </section>
-    </main>
+            <section class="card progressCard" id="progress">
+                <div class="cardTitle greenTitle">
+                    <img src="images/chart.png" alt="chart" width="30">
+                    <h2>My Study Progress</h2>
+                </div>
+                <div class="cardBody">
+                    <p class="stat">Completed Tasks: <span class="badge green" id="completed">0</span></p>
+                    <p class="stat">Total Tasks: <span class="badge blue" id="total">0</span></p>
+                    <p class="stat">Completion: <span class="badge yellow" id="percent">0%</span></p>
+                    <div class="barRow">
+                        <div class="barBack">
+                            <div class="barFill" id="barFill"></div>
+                        </div>
+                        <span id="barText">0%</span>
+                    </div>
+                </div>
+            </section>
 
-    <!-- Footer -->
-     <footer>
-        <p>&copy; 2026 Study Planner. Keep Learning every day!</p>
-     </footer>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 StudyMate. Keep learning every day!</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
